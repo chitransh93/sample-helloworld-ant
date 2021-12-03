@@ -21,6 +21,7 @@ jobs:
       with:
         java-version: '11'
         distribution: 'adopt'
+        cache: ant
     - name: Build with Ant
       run: ant -noinput -buildfile build.xml
     - name: Upload Artifacts to run 
